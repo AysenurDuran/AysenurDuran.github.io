@@ -38,7 +38,7 @@ const events = [
       description: 'Bu projeyi Onion Architecture mimarisini kullanarak geliştirdik ve C# ile JavaScript programlama dillerinden faydalandık. Front-end tarafında HTML5, CSS ve Bootstrap gibi teknolojileri kullanırken, back-end kısmında Identity Framework, ASP.NET Core altyapısı ve MVC Design Pattern uyguladık. Takım arkadaşlarımla birlikte Azure DevOps kullanarak bu süreci başarılı bir şekilde yönettik. Ayrıca MSSQL veritabanı yönetim sistemi kullanarak bir Cloud Database oluşturduk. Projede Admin, Yönetici ve Çalışan olmak üzere üç farklı kullanıcı rolü bulunmaktadır. <br /> (Github linki: <a href=" https://github.com/AysenurDuran/HumanResourcesProject.git/">Tıklayın </a>)'
   },
   {
-      id:5,
+      id: 5,
       start: new Date('2024-09-01'),
       end: new Date('2025-06-01'),
       position: 'Blog Sitesi',
@@ -46,7 +46,7 @@ const events = [
       description: 'ASP.Net Core MVC ve Entity Framework Core teknolojisi kullanarak Code First yaklaşımıyla geliştirilmiş bir blog sitesidir. Sitede crud işlemleri uygulanmıştır. Kullanıcı paneli sayesinde makaleler yayınlanabilmektedir.  <br /> (Github linki: <a href=" https://github.com/AysenurDuran/AysenursBlog.git/">Tıklayın </a>)'
   },
   {
-    id:  6,
+    id: 6,
     start: new Date('2024-09-01'),
     end: new Date('2025-06-01'),
     position: 'Diyet Takip Projesi',
