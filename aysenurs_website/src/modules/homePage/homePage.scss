@@ -237,50 +237,129 @@ img{
         }
 
     }
-    .projects-card{
-display: flex;
-flex-wrap: wrap;
-justify-content:space-around;
-align-items: center;
-width: 70%;
-padding: 20px;
-
-.card-first{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .text-container{
-        display: flex;
+    .projects-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 20px; /* Kartlar arasındaki boşluk */
         justify-content: center;
         align-items: center;
-        flex-direction: column; 
-    }
-}
-img{
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 100px; /* Sol üst köşe */
-  border-top-right-radius: 100px; /* Sağ üst köşe */
-}
-hr {
-    width: 100%;
-    border: 1px solid #BD8F53;
-    margin: 10px 0;
-  }
-h4{
-font-family: "Radley", serif;
-font-weight: 400;
-font-style: normal;
-font-size: 22px;
-}
-p{
-    font-family: 'Carlito';
-}
-}
-}
+        width: 70%;
+        padding: 20px;
 
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr); // Ekran genişliği 768px ile 1024px arasında iken 2 sütun düzeni
+          }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; // Ekran küçüldüğünde kartlar tek sütun halinde sıralansın
+          }
+        .project-card-first {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 20px;
+      
+          .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            width: 100%; /* Genişliği tüm karta yay */
+          }
+      
+          img {
+            width: 200px;
+            height: 200px;
+            border-top-left-radius: 100px; /* Sol üst köşe */
+            border-top-right-radius: 100px; /* Sağ üst köşe */
+          }
+      
+          hr {
+            width: 100%;
+            border: 1px solid #BD8F53;
+            margin: 10px 0;
+            align-self: center; /* Merkezi hizala */
+          }
+      
+          h4 {
+        font-family: "Radley", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        text-align: center;
+        min-height: 60px; /* Sabit bir yükseklik belirleyin */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          }
+      
+          p {
+            font-family: 'Carlito';
+            text-align: center; /* Merkezi hizala */
+            a {
+                color: #9B4819;
+                text-decoration: none;
+            }
+          }
+        }
+      }
+      
+    } 
+
+   
+//     .projects-card{
+// display: flex;
+// flex-wrap: wrap;
+// justify-content:space-around;
+// align-items: center;
+// width: 70%;
+// padding: 20px;
+
+// .project-card-first{
+//    // width: 29%;
+//     padding: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     .text-container{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column; 
+//     }
+// }
+// img{
+//     width: 200px;
+//     height: 200px;
+//     border-top-left-radius: 100px; /* Sol üst köşe */
+//   border-top-right-radius: 100px; /* Sağ üst köşe */
+// }
+// hr {
+//     width: 100%;
+//     border: 1px solid #BD8F53;
+//     margin: 10px 0;
+//   }
+// h4{
+// font-family: "Radley", serif;
+// font-weight: 400;
+// font-style: normal;
+// font-size: 22px;
+// }
+// p{
+//     font-family: 'Carlito';
+// }
+// }
+// }
+// @media (max-width: 768px) {
+//     .project-card-first{
+//         //width: 50%;
+//     }
+// }
+
+
+  
 /////////////////-------------------------------Skills-----------------------------////////////////
 
 .skills{

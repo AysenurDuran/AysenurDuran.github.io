@@ -97,57 +97,56 @@ function HomePage() {
        </div>
        <div className='projects-card'>
 
-        <div className='card-first'>
+        <div className='project-card-first'>
             <img className='image' src={rsm} alt="" />
             <div className='text-container'>
               <h4>Bilge Adam Kampüs</h4>
-              <h4></h4>
               <hr />
-              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-3">tıklatınız</Link> </p>
+              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-3">tıklayınız.</Link> </p>
             </div>
         </div>
 
-        <div className='card-first'>
+        <div className='project-card-first'>
             <img className='image' src={rsm5} alt="" />
             <div className='text-container'>
               <h4>İşletme Web Sitesi</h4>
               <hr />
-              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-1">tıklatınız</Link> </p>
+              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-1">tıklayınız.</Link> </p>
             </div>
         </div>
 
-        <div className='card-first'>
+        <div className='project-card-first'>
             <img className='image' src={rsm3} alt="" />
             <div className='text-container'>
               <h4>İnsan Kaynakları Yönetim Programı</h4>
               <hr />
-              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-4">tıklatınız</Link> </p>
+              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-4">tıklayınız.</Link> </p>
             </div>
         </div>
 
-        <div className='card-first'>
+        <div className='project-card-first'>
             <img className='image' src={rsm2} alt="" />
             <div className='text-container'>
               <h4>Kişisel Web Sayfası</h4>
               <hr />
-              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-2">tıklatınız</Link> </p>
+              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-2">tıklayınız.</Link> </p>
             </div>
         </div>
-        <div className='card-first'>
+        <div className='project-card-first'>
             <img className='image' src={rsm4} alt="" />
             <div className='text-container'>
               <h4>Blog Sitesi</h4>
               <hr />
-              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-5">tıklatınız</Link> </p>
+              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-5">tıklayınız.</Link> </p>
             </div>
         </div>
 
-        <div className='card-first'>
+        <div className='project-card-first'>
             <img className='image' src={rsm6} alt="" />
             <div className='text-container'>
               <h4>Diyet Takip Projesi</h4>
               <hr />
-              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-6">tıklatınız</Link> </p>
+              <p>Detaylı görmek için <Link to ="/projectDetail#timelineElement-6">tıklayınız.</Link> </p>
             </div>
         </div>
 
