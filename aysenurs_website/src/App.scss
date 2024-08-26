@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .app{
+    width: 100vw;
+    main{
+        //margin-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }

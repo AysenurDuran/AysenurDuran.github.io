@@ -1,0 +1,479 @@
+
+// body, html {
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   .header {
+//     position: relative; // Yerleşim düzeni için gerekli
+//     width: 100%;
+//     height: 400px; // Tam ekran yüksekliği
+//     overflow: hidden; // Taşmayı gizle
+//     margin: 0;
+//     padding: 0;
+//     color: #213547;
+//     background-color: #F4F1E8; // Arka plan rengini belirleyin
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     //justify-content: center;
+//     text-align: center;
+//     font-family: "Radley", serif;
+//     font-weight: 400;
+//     font-style: italic;
+//     background: linear-gradient(#F4F1E8,rgba(228, 226, 226, 0.801)), url(img/arkaplan.png);
+//     background-image: url(img/arkaplan.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     // .hero stilini doğrudan header'a uygulayın
+//     .hero {
+//       position: absolute; // Header'ın arka planı olarak yerleştir
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       z-index: -1; // İçeriğin altında görünmesini sağlar
+//       overflow: hidden;
+  
+//       video {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         filter: grayscale(1);
+//         /* opacity: 0.8; */
+//         box-shadow: 10px 10px 30px;
+//       }
+  
+//       img {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         opacity: 0.6;
+//         z-index: 1;
+//         box-shadow: 10px 10px 30px #799729;
+//       }
+//     }
+  
+  
+//     .logo{
+//         margin-bottom: 4rem;
+//         margin-top: 2rem;
+//     }
+//     .hello {
+//         margin-bottom: 1rem;
+//         font-synthesis: none;
+//         overflow: hidden; /* Scroll bar oluşmasını engellemek için taşmayı gizler */
+//         h1{
+//         font-size: 3.2em;
+//         line-height: 1.1;
+//         overflow: hidden;
+//         span{
+//         color: #9B4819;
+//         font-family: "Radley", serif;
+//         font-weight: 400;
+//         font-style: normal;
+//         }
+
+//         }
+//     }
+    
+//     .paragraph {
+//         margin-bottom: 1rem;
+//         width: 50%;
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .header {
+//       height: auto;
+//       padding: 20px;
+  
+//       .logo {
+//         margin-bottom: 2rem;
+//       }
+  
+//       .hello {
+//         h1 {
+//           font-size: 2.4em;
+//         }
+//       }
+  
+//       .paragraph {
+//         width: 80%;
+//         font-size: 1em;
+//       }
+//     }
+//   }
+  
+//   @media (max-width: 480px) {
+//     .header {
+//       padding: 10px;
+  
+//       .hello {
+//         h1 {
+//           font-size: 1.8em;
+//         }
+//       }
+  
+//       .paragraph {
+//         width: 90%;
+//         font-size: 0.9em;
+//       }
+//     }
+//   }
+
+
+
+
+//   .overlay {
+//     font-family: "Radley", serif;
+//     font-style: normal;
+//     height: 100%;
+//     width: 0;
+//     position: fixed;
+//     z-index: 1;
+//     top: 0;
+//     right: 0;
+//     background-color: #9b4919f8;
+//     overflow-x: hidden;
+//     transition: transform 0.5s ease;
+//     display: none; /* Menü başlangıçta gizli */
+//   }
+  
+//   .overlay.open {
+//     width: 100%;
+//     display: block; /* Menü açıldığında görünür */
+//   }
+  
+//   .overlay-content {
+//     position: relative;
+//     top: 25%;
+//     width: 100%;
+//     text-align: center;
+//     margin-top: 30px;
+//   }
+  
+//   .overlay a {
+//     padding: 8px;
+//     text-decoration: none;
+//     font-size: 36px;
+//     color: #314028;
+//     display: block;
+//     transition: 0.3s;
+//   }
+  
+//   .overlay a:hover, .overlay a:focus {
+//     color: #f1f1f1;
+//   }
+  
+//   .overlay .closebtn {
+//     font-family: 'Lato', sans-serif;
+//     position: absolute;
+//     top: 20px;
+//     left: 45px;
+//     font-size: 20px;
+//     color: #314028; /* Kapatma butonunun rengi */
+//   text-decoration: none; /* Link altını çizmeyi kaldırır */
+//   cursor: pointer;
+//   }
+  
+//   .openbtn {
+//     font-family: "Radley", serif;
+//     font-style: normal;
+//     font-size: 30px;
+//     cursor: pointer;
+//     position: fixed;
+//     top: 20px;
+//     right: 20px;
+//     z-index: 2;
+//     color: #314028;
+//     display: none; /* Açma butonu başlangıçta gizli */
+//   }
+
+//   .openbtn.open {
+//     display: block; /* Açma butonu küçük ekranlarda görünür */
+// }
+  
+//   @media screen and (max-width: 768px) {
+//     .overlay {
+//       display: none; /* Menü küçük ekranlarda başlangıçta gizli */
+//     }
+//     .overlay.open {
+//       display: block; /* Menü küçük ekranlarda açıldığında görünür */
+//     }
+//     .openbtn {
+//       display: block; /* Açma butonu küçük ekranlarda görünür */
+//     }
+//   }
+  
+//   @media screen and (max-height: 450px) {
+//     .overlay a {
+//       font-size: 20px;
+//     }
+//     .overlay .closebtn {
+//       font-size: 40px;
+//       top: 15px;
+//       left: 35px;
+//     }
+//   }
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative; // Yerleşim düzeni için gerekli
+  width: 100%;
+  height: 400px; // Tam ekran yüksekliği
+  overflow: hidden; // Taşmayı gizle
+  margin: 0;
+  padding: 0;
+  color: #213547;
+  background-color: #F4F1E8; // Arka plan rengini belirleyin
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
+  text-align: center;
+  font-family: "Radley", serif;
+  font-weight: 400;
+  font-style: italic;
+  background: linear-gradient(#F4F1E8,rgba(228, 226, 226, 0.801)), url(img/arkaplan.png);
+  background-image: url(img/arkaplan.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // .hero stilini doğrudan header'a uygulayın
+  .hero {
+    position: absolute; // Header'ın arka planı olarak yerleştir
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; // İçeriğin altında görünmesini sağlar
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1);
+      /* opacity: 0.8; */
+      box-shadow: 10px 10px 30px;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.6;
+      z-index: 1;
+      box-shadow: 10px 10px 30px #799729;
+    }
+  }
+
+
+  .logo{
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+  }
+  .hello {
+      margin-bottom: 1rem;
+      font-synthesis: none;
+      overflow: hidden; /* Scroll bar oluşmasını engellemek için taşmayı gizler */
+      h1{
+      font-size: 3.2em;
+      line-height: 1.1;
+      overflow: hidden;
+      span{
+      color: #9B4819;
+      font-family: "Radley", serif;
+      font-weight: 400;
+      font-style: normal;
+      }
+
+      }
+  }
+  
+  .paragraph {
+      margin-bottom: 1rem;
+      width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 20px;
+
+    .logo {
+      margin-bottom: 2rem;
+    }
+
+    .hello {
+      h1 {
+        font-size: 2.4em;
+      }
+    }
+
+    .paragraph {
+      width: 80%;
+      font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+
+    .hello {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+
+    .paragraph {
+      width: 90%;
+      font-size: 0.9em;
+    }
+  }
+}
+
+
+
+
+.overlay {
+  font-family: "Radley", serif;
+  font-style: normal;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #9b4919f8;
+  overflow-x: hidden;
+  transition: width 0.5s ease; 
+  display: none; /* Menü başlangıçta gizli */
+}
+
+.overlay.open {
+  width: 100%;
+  display: block; /* Menü açıldığında görünür */
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay span {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #314028;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay span:hover, .overlay span:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 20px;
+  color: #314028; /* Kapatma butonunun rengi */
+text-decoration: none; /* Link altını çizmeyi kaldırır */
+cursor: pointer;
+}
+
+.openbtn {
+  font-family: "Radley", serif;
+  font-style: normal;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  color: #574227;
+  display: none; /* Açma butonu başlangıçta gizli */
+}
+
+.openbtn.open {
+  display: block; /* Açma butonu küçük ekranlarda görünür */
+}
+.overlay.close {
+  width: 0; /* Kapanırken genişliği küçült */
+  animation: slideOut 0.5s forwards; /* Kapanma animasyonu */
+}
+@media screen and (max-width: 768px) {
+  .overlay {
+    display: none; /* Menü küçük ekranlarda başlangıçta gizli */
+  }
+  .overlay.open {
+    display: block; /* Menü küçük ekranlarda açıldığında görünür */
+  }
+  .openbtn {
+    display: block; /* Açma butonu küçük ekranlarda görünür */
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay span {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    left: 35px;
+  }
+}
+.header.scrolled .openbtn {
+  color: #000; /* Scrolled durumda buton rengi değişebilir */
+}
+@keyframes slideIn {
+  from {
+    width: 0;
+    right: -100%;
+  }
+  to {
+    width: 100%;
+    right: 0;
+  }
+}
+
+.overlay.open {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    width: 100%;
+    right: 0;
+  }
+  to {
+    width: 0;
+    right: -100%;
+  }
+}
+.overlay.close {
+  width: 0; /* Kapanırken genişliği küçült */
+  animation: slideOut 0.5s forwards; /* Kapanma animasyonu */
+}

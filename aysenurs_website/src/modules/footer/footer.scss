@@ -1,0 +1,199 @@
+.footer{
+    width: 100%;
+    background-color: #9B4819;
+    color: white;
+    padding-top: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 150px;
+    flex-wrap: wrap;
+    span{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-family: "Radley", serif;
+        font-weight: 400;
+        font-style: normal;
+        display: block;
+    }
+}
+
+.contact-info {
+    //margin-right: 70px; 
+    width: 30%;
+    span{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-family: "Radley", serif;
+        font-weight: 400;
+        font-style: normal;
+        display: block;
+    }
+    b{
+        display: inline-block;
+        font-weight: 100;
+        font-family: 'Carlito';
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    hr {
+        width: 100%;
+        border: 1px solid #BD8F53;
+        margin: 10px 0;
+      }
+    .social-media {
+        margin-top: 5px;
+        padding-top: 5px;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* İkonları yatay hizala */
+            gap: 7px; /* İkonlar arasındaki boşluk */
+            
+            li {
+                a {
+                    font-size: 22px; /* İkon boyutunu ayarla */
+                    color: #f6f8fb; /* İkon rengi */
+                    
+                    &:hover {
+                        color: #314028; /* Hover durumunda ikon rengi */
+                    }
+                }
+            }
+    }
+}
+.mail{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    .mail-icon{
+        padding-top: 20px;
+        padding-right: 5px;
+        font-size: 30px;
+    }
+    .mail-text{
+        b{
+            
+            font-weight: 100;
+            font-family: 'Carlito';
+            font-size: 12px;
+        }
+        p{
+                font-weight: 100;
+                font-family: "Radley", serif;
+                font-size: 12px;
+        }
+    }
+}
+}
+.contact-form {
+    margin-left: 50px;
+    padding-left: 50px;
+    span{
+        line-height: normal;
+        font-size: 36px;
+        font-family: sans-serif;
+    }
+    form {
+        .form-group {
+            margin: 0px 0px 37px;
+            input, textarea {
+                width: 90%;
+                padding: 3px 3px 3px 12px;
+                border: 1px solid #f6f5f5;
+                border-radius: 2px;
+                background-color: transparent; /* Arka planı şeffaf yap */
+                color: #fdfafa; /* Yazı rengini belirle */
+                height: 45px;
+                box-sizing: border-box;
+                transition: border 0.2s ease,padding 0.2s ease;
+                &:hover, &:focus{
+                    border:  2px solid #f6f5f5;
+                    outline: none;
+                }
+            }
+            textarea{
+                height: 100px;
+                padding-top: 10px;
+                width: 95%;
+            }
+            .input-subject{
+                width: 95%;
+            }
+            input::placeholder, textarea::placeholder {
+                color: #FFF9F8; /* Placeholder rengini belirle */
+            }
+        }
+        .flex-group { 
+            display: flex;
+            gap: 10px; /* Inputlar arasındaki boşluk */
+            flex-wrap: wrap;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #314028;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color:rgb(10, 46, 2);
+            }
+        }
+    }
+}
+
+.footer-bottom{
+    background-color:#413ADA;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      gap: 20px;
+    }
+  
+    .contact-info, .contact-form {
+      width: 90%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .contact-info {
+      span, b {
+        text-align: start;
+        display: block;
+      }
+    }
+  
+    .contact-form {
+      form {
+        .form-group {
+          input, textarea {
+            width: 100%;
+          }
+  
+          .input-subject {
+            width: 100%;
+          }
+          .first-name{
+            width: 100%;
+          }
+          .last-name{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,119 @@
+// #navbar {
+//     overflow: hidden;
+//     background-color: #9B4819;
+//     position: sticky; /* Sabit pozisyon */
+//     top: 400; /* Sayfanın üst kısmında sabitle */
+//     width: 100%;
+//    // z-index: 1000; /* Diğer öğelerin üstünde görünmesini sağlar */
+//     display: flex;
+//     justify-content: center;
+//     font-family: "Radley", serif;
+//   }
+  
+//   #navbar a {
+//     display: block;
+//     color: #f2f2f2;
+//     text-align: center;
+//     padding: 14px 16px;
+//     text-decoration: none;
+//     font-size: 17px;
+//     cursor: pointer;
+//   }
+  
+//   #navbar a:hover {
+//     background-color: #F4F1E8;
+//     color: black;
+//   }
+  
+//   @media (max-width: 768px) {
+//     #navbar a span {
+//       display: none; /* Yazıları gizle */
+//     }
+//   }
+  
+//   @media (max-width: 480px) {
+//     #navbar a span {
+//       display: none; /* Yazıları gizle */
+//     }
+//   }
+
+
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #9B4819;
+  position: sticky; /* Sabit pozisyon */
+  top: 400; /* Sayfanın üst kısmında sabitle */
+  width: 100%;
+  // z-index: 1000; /* Diğer öğelerin üstünde görünmesini sağlar */
+  display: flex;
+  justify-content: center;
+  font-family: "Radley", serif;
+}
+
+#navbar span {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#navbar span:hover {
+  background-color: #F4F1E8;
+  color: black;
+}
+#navbar a {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+     // padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    
+    #navbar a:hover {
+      background-color: #F4F1E8;
+      color: black;
+    }
+    #navbar a:hover {
+          background-color: #F4F1E8;
+          color: black;
+        }
+@media (max-width: 768px) {
+  #navbar span {
+    display: none; /* Metinleri tamamen gizle */
+  }
+  #navbar a span {
+          display: none; /* Yazıları gizle */
+        }
+  #navbar::before {
+    content: "---------"; /* Burada bir menü ikonu veya metni gösterebilirsiniz */
+    display: block;
+    font-size: 18px; /* Menünün görünümü için stil ayarları */
+    text-align: center;
+    color: #9B4819;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  #navbar span {
+    display: none; /* Metinleri tamamen gizle */
+  }
+  #navbar a span {
+          display: none; /* Yazıları gizle */
+        }
+  #navbar::before {
+    content: "-------- "; /* Burada bir menü ikonu veya metni gösterebilirsiniz */
+    display: block;
+    font-size: 18px; /* Menünün görünümü için stil ayarları */
+    text-align: center;
+    color: #9B4819;
+    font-size: 17px;
+  }
+}
