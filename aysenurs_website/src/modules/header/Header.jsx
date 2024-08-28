@@ -115,7 +115,7 @@ const Header = () => {
             <div className={`header ${isScrolled ? "scrolled" : ""}`}>
                 <section className="hero">
                     <img src={hero} alt="hulk" />
-                    <video src={video} loop autoPlay muted></video>
+                    <video src={video} loop autoPlay muted playsInline ></video>
                 </section>
                 <div className={`overlay ${isOpen ? 'open' : ''}`} id="myNav">
                     <div className="overlay-content">
