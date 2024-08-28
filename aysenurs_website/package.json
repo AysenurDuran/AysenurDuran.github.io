@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "start": "npm run dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
